@@ -29,11 +29,13 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
         android:ems="10"
-        android:hint="Ingrese los dolares"
+        android:hint=""
         android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/tvDolares"
-        app:layout_constraintTop_toBottomOf="@+id/tvDolares" />
+        app:layout_constraintTop_toBottomOf="@+id/tvDolares"
+        android:enabled="false"
+        />
 
         <TextView
             android:id="@+id/tvEuros"
@@ -58,7 +60,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/tvEuros"
             app:layout_constraintTop_toBottomOf="@+id/tvEuros"
-            android:hint="Ingrese los euros"
+            android:hint=""
+            android:enabled="false"
             />
 
         <TextView
@@ -84,18 +87,19 @@
             app:layout_constraintStart_toStartOf="@+id/tvValorConversion"
             app:layout_constraintTop_toBottomOf="@+id/tvValorConversion" />
 
-        <EditText
-            android:id="@+id/etUnEuro"
-            android:layout_width="80dp"
-            android:layout_height="48dp"
-            android:layout_marginStart="8dp"
-            android:ems="10"
-            android:inputType="numberDecimal"
-            app:layout_constraintBottom_toBottomOf="@+id/tv1dolar"
-            app:layout_constraintStart_toEndOf="@+id/tv1dolar"
-            app:layout_constraintTop_toTopOf="@+id/tv1dolar"
-            android:hint="conversion actual"
-            />
+    <EditText
+        android:id="@+id/etUnEuro"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="0.86"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@+id/tv1dolar"
+        app:layout_constraintStart_toEndOf="@+id/tv1dolar"
+        app:layout_constraintTop_toTopOf="@+id/tv1dolar"
+        android:enabled="false"
+        />
 
         <Button
             android:id="@+id/btnCambiar"
