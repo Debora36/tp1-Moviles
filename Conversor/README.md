@@ -1,7 +1,9 @@
-Conversor de Moneda
+# **Conversor de Moneda**
+
 Es una aplicación de Android desarrollada en Java que permite realizar conversiones entre Dólares y Euros, con la capacidad de actualizar el tipo de cambio.
 
-Patron MVVM
+## **Patron MVVM**
+
 El proyecto está estructurado bajo el patrón de diseño Model-View-ViewModel (MVVM) para separar la lógica de negocio de la interfaz de usuario:
 
 View (MainActivity): Gestiona la interfaz y los eventos del usuario. Implementa ViewBinding para la vinculación segura de las vistas.
@@ -10,22 +12,16 @@ ViewModel (MainActivityViewModel): Centraliza la lógica matemática de las conv
 
 LiveData: Utiliza MutableLiveData para almacenar el valor de la moneda, permitiendo que se actualice de forma segura la información.
 
-Tecnologías utilizadas
-Java
+## **Tecnologías utilizadas**
+* Java
+* Android Studio
+* Componentes de Arquitectura de Android (ViewModel, LiveData)
+* ViewBinding
+* ConstraintLayout
 
-Android Studio
+## **Instalación y uso**
 
-Componentes de Arquitectura de Android (ViewModel, LiveData)
-
-ViewBinding
-
-ConstraintLayout
-
-Instalación y uso
-Clonar el repositorio.
-
-Abrir el proyecto en Android Studio.
-
-Sincronizar los archivos de Gradle.
-
-Ejecutar en un emulador o dispositivo físico (API 33 o superior).
+1. Clonar el repositorio.
+2. Abrir el proyecto en Android Studio.
+3. Sincronizar los archivos de Gradle.
+4. Ejecutar en un emulador o dispositivo físico (API 33 o superior).
